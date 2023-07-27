@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Yılmazoğlu Group</title>
+</head>
+
+<body>
+    <header class="header sub-header d-flex justify-content-center align-items-center">
+        <div class="header-inner w-100">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between">
+                    <!--  justify-content-between -->
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-fluid logo" src="./img/logo.png" alt="">
+                    </a>
+
+                    <div class="wrapper">
+                        <button role="button" class="menu-toggle">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="menu-area">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a class="navbar-brand d-xl-none d-block" href="index.html">
+                                <img class="img-fluid logo" src="./img/logo.png" alt="">
+                            </a>
+
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                                </li>
+                                <li class="nav-item dropdown" data-bs-toggle="navbarDropdown" aria-expanded="false">
+
+                                    <a class="nav-link" href="about.html">
+                                        Kurumsal<i class="fa-sharp fa-solid fa-chevron-down"></i>
+                                    </a>
+                                    <!--  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+                                        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+                                        <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+                                    </ul> -->
+                                </li>
+
+                                <li class="nav-item dropdown mega-dropdown" data-bs-toggle="navbarDropdown" aria-expanded="false">
+
+                                    <a class="nav-link dropdown-toggle" href="services.html" > <!-- role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" -->
+                                        Hizmetlerimiz<i class="fa-sharp fa-solid fa-chevron-down"></i>
+                                    </a>
+                                <!--     <div class="dropdown-menu mega-menu" aria-labelledby="defaultDropdown">
+                                        <div class="row">
+                                            <div class="col-xl-4 d-xl-block d-none">
+                                                <div class="img-wrapper position-relative h-100 ">
+                                                    <div class="area">
+                                                        <img src="./img/hizmetler.jpg" class="img-fluid" alt="">
+                                                        <div class="text">
+                                                            <h4>HİZMETLERİMİZ</h4>
+                                                            <a href="services.html" class="detail">Devam Et <i class="fa-solid fa-right-long"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-8">
+                                                <ul class="sub-item">
+                                                    <li class="dropdown-item" data-image="./img/hizmetler.jpg"><a href="service-detail.html">Finans Hizmetleri</a> <i class="fa-sharp fa-solid fa-chevron-right"></i></li>
+                                                    <li class="dropdown-item" data-image="./img/img2.jpg"><a href="service-detail.html">Lojistik Hizmetleri</a><i class="fa-sharp fa-solid fa-chevron-right"></i>
+                                                    </li>
+                                                    <li class="dropdown-item" data-image="./img/hizmetler.jpg"><a href="service-detail.html">Otomotiv Hizmetleri</a><i class="fa-sharp fa-solid fa-chevron-right"></i>
+                                                    </li>
+                                                    <li class="dropdown-item" data-image="./img/img2.jpg"><a href="service-detail.html">Akaryakıt ve Enerji Hizmetleri
+                                                        </a><i class="fa-sharp fa-solid fa-chevron-right"></i>
+                                                    </li>
+                                                    <li class="dropdown-item" data-image="./img/img2.jpg"><a href="service-detail.html">Gayrimenkul Hizmetleri </a><i class="fa-sharp fa-solid fa-chevron-right"></i></li>
+                                                    <li class="dropdown-item" data-image="./img/hizmetler.jpg"><a href="service-detail.html">Turizm ve Otelcilik </a><i class="fa-sharp fa-solid fa-chevron-right"></i></li>
+                                                    <li class="dropdown-item" data-image="./img/img2.jpg"> <a href="service-detail.html">Sağlık Hizmetleri </a><i class="fa-sharp fa-solid fa-chevron-right"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="news.html">Haberler <i class="fa-sharp fa-solid fa-chevron-down"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="projects.html">Projeler <i class="fa-sharp fa-solid fa-chevron-down"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="contact.html">İletişim <i class="fa-sharp fa-solid fa-chevron-down"></i></a>
+                                </li>
+                            </ul>
+                            <div class="language position-relative d-xl-none d-inline-block">
+                                <div class="active-lang">
+                                    <a href="">EN</a>
+                                </div>
+                                <div class="other-lang">
+                                    <a href="">TR</a>
+                                </div>
+                                <img src="./img/lang-shape.png" class="img-fluid" alt="">
+                                <!-- <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ING
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">TR</a></li>
+    
+                                    </ul>
+                                </div> -->
+                            </div>
+                            <div class="search search-mobil d-xl-none d-block">
+                                <!--  <i class=" fa-solid fa-magnifying-glass"></i> -->
+                                <a href="#search">
+                                    <img src="./img/search.png" class="img-fluid" alt="">
+                                </a>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="header-right d-xl-flex align-items-center gap-3 d-none">
+
+                        <div class="language position-relative d-xl-block d-none">
+                            <div class="active-lang">
+                                <a href="">EN</a>
+                            </div>
+                            <div class="other-lang">
+                                <a href="">TR</a>
+                            </div>
+                            <img src="./img/lang-shape.png" class="img-fluid" alt="">
+                            <!-- <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ING
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">TR</a></li>
+
+                                </ul>
+                            </div> -->
+                        </div>
+                        <div class="search d-xl-block d-none">
+                            <!--  <i class=" fa-solid fa-magnifying-glass"></i> -->
+                            <a href="#search">
+                                <img src="./img/search.png" class="img-fluid" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="search">
+        <button type="button" class="close">×</button>
+        <form>
+            <input type="search" value="" placeholder="Bir kelime ara..." />
+            <button type="submit" class="btn">Ara</button>
+        </form>
+    </div>
+    <section class="sub-banner" style="background-color: black;">
+        <div class="top-menu">
+            <div class="container-fluid">
+                <ul class="d-flex align-items-center gap-2">
+                    <li><a href="index.html">Ana Sayfa <i class="fa-solid fa-right-long"></i></a></li>
+                    <li><a href="">Hizmetlerimiz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-banner-area d-flex align-items-end" style="background: url(./img/group-people-working-out-business-plan-office.jpg) no-repeat; background-size: cover; background-position: center; min-height: 50vh;">
+            <div class="container-fluid">
+                <div class="content">
+                    <h2>Hizmetlerimiz</h2>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor unt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commo viverra maecenas accumsan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-list">
+        <div class="container-fluid">
+            <div class="title text-center">
+                <h3>HER SEKTÖRDE ÖNCÜ</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </P>
+            </div>
+            <div class="list-area">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="box">
+                            <div class="title-area">
+                                <h4>RADEM TUR</h4>
+                            </div>
+                            <a href="service-detail.html">
+                                <div class="img-wrapper">
+                                    <img src="./img/travel-agent-working-with-client-light-modern-office-tour-agency.jpg" class="img-fluid w-100" alt="service-img">
+                                </div>
+                            </a>
+                            <div class="service-info">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                    </p>
+                                </div>
+                                <a href="service-detail.html" class="btn d-flex align-items-center justify-content-start">Detaylı Bilgi Alın <i class="fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="box">
+                            <div class="title-area">
+                                <h4>RADEM HAYVANCILIK</h4>
+                            </div>
+                            <a href="service-detail.html">
+                                <div class="img-wrapper">
+                                    <img src="./img/tractor-makes-harvesting-hay-animals-farm.jpg" class="img-fluid w-100" alt="service-img">
+                                </div>
+                            </a>
+                            <div class="service-info">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                </div>
+                                <a href="service-detail.html" class="btn d-flex align-items-center justify-content-start">Detaylı Bilgi Alın <i class="fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="box">
+                            <div class="title-area">
+                                <h4>RADEM TURİZM ve TAŞIMACILIK</h4>
+                            </div>
+                            <a href="service-detail.html">
+                                <div class="img-wrapper">
+                                    <img src="./img/female-tourists-hand-have-happy-travel-map.jpg" class="img-fluid w-100" alt="service-img">
+                                </div>
+                            </a>
+                            <div class="service-info">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                </div>
+                                <a href="service-detail.html" class="btn d-flex align-items-center justify-content-start">Detaylı Bilgi Alın <i class="fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="box">
+                            <div class="title-area">
+                                <h4>RADEM PARK</h4>
+                            </div>
+                            <a href="service-detail.html">
+                                <div class="img-wrapper">
+                                    <img src="./img/construction-silhouette.jpg" class="img-fluid w-100" alt="service-img">
+                                </div>
+                            </a>
+                            <div class="service-info">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                </div>
+                                <a href="service-detail.html" class="btn d-flex align-items-center justify-content-start">Detaylı Bilgi Alın <i class="fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="box">
+                            <div class="title-area">
+                                <h4>MASSAİİ MEN</h4>
+                            </div>
+                            <a href="">
+                                <div class="img-wrapper">
+                                    <img src="./img/side-view-image-young-concentrated-shoemaker.jpg" class="img-fluid w-100" alt="service-img">
+                                </div>
+                            </a>
+                            <div class="service-info">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                </div>
+                                <a href="service-detail.html" class="btn d-flex align-items-center justify-content-start">Detaylı Bilgi Alın <i class="fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="box">
+                            <div class="title-area">
+                                <h4>MASSAİİ WOMEN</h4>
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="./img/making-footwear.jpg" class="img-fluid w-100" alt="service-img">
+                            </div>
+                            <div class="service-info">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                </div>
+                                <a href="service-detail.html" class="btn d-flex align-items-center justify-content-start">Detaylı Bilgi Alın <i class="fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="current">
+        <div class="container-fluid">
+
+            <div class="swiper mySwiperCurrent">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box-item d-flex">
+
+                            <div class="content">
+                                <div class="d-flex">
+                                    <div class="img-wrapper d-flex align-items-center">
+                                        <img src="./img/country.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="content-info">
+
+                                        <div class="title-area">
+                                            <h2>+ 42</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-text">
+                                    <p>Hizmet vermeye devam ettiğimiz
+                                        ülke sayısı</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-item">
+
+                            <div class="content">
+                                <div class="d-flex">
+                                    <div class="img-wrapper d-flex align-items-center">
+                                        <img src="./img/building.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="content-info">
+                                        <div class="title-area">
+                                            <h2>+ 120</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-text">
+                                    <p>Hizmet vermekten mutluluk
+                                        duyduğumuz gayrimenkul
+                                        hizmet sayısı</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-item">
+
+                            <div class="content ">
+                                <div class="d-flex">
+                                    <div class="img-wrapper d-flex align-items-center">
+                                        <img src="./img/financial.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="content-info">
+                                        <div class="title-area">
+                                            <h2>+ 600 </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-text">
+                                    <p>Hizmet vermiş olduğumuz
+                                        finansal hizmet desteği</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-item">
+
+                            <div class="content">
+                                <div class="d-flex">
+                                    <div class="img-wrapper d-flex align-items-center">
+                                        <img src="./img/car.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="content-info">
+                                        <div class="title-area">
+                                            <h2>+ 150</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-text">
+                                    <p>Hizmet vermeye devam ettiğimiz
+                                        Otomotiv hizmeti</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="img-wrapper">
+                            <img src="./img/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text mt-5">
+                            <p>
+                                Türkiye'nin ve Avrupa'nın en büyük, başarılı ve yenilikçi lider şirketlerinden biri olma yolunda, deneyimli ve eğitimli kadrosu ile faaliyet gösterdiği her sektörde, başarılı işlere imza atarakTürkiye'nin ve Avrupa'nın en büyük, başarılı ve yenilikçi lider şirketlerinden biri olma yolunda, deneyimli ve eğitimli kadrosu ile faaliyet gösterdiği
+                                sektörde, başarılı işlere imza atarak
+                            </p>
+                            <div class="campany">
+                                <a href="#"><img src="./img/logo1.png" class="img-fluid" alt="campany"></a>
+                                <a href="#"><img src="./img/logo2.png" class="img-fluid" alt="campany"></a>
+                                <a href="#"><img src="./img/logo3.png" class="img-fluid" alt="campany"></a>
+                                <a href="#"><img src="./img/logo4.png" class="img-fluid" alt="campany"></a>
+                                <a href="#"><img src="./img/logo5.png" class="img-fluid" alt="campany"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="group-campany">
+                            <div class="follow-us">
+                                <h5>
+                                    Bizi Takip Edin
+                                </h5>
+                                <p>
+                                    Yılmazoğlu Group hakkında güncel haberler için bizi sosyal medya hesaplarımızdan takip edin.
+                                </p>
+                                <div class="social-media">
+                                    <ul class="d-flex gap-3">
+                                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="demsa-career-area mt-5">
+                                <h5 class="mb-3">
+                                    Yılmazoğlu Group Kariyer
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <form>
+                                    <div class="form-area d-flex align-items-center">
+                                        <div class="form-group w-100">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <button type="submit" class="btn">Gönder</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div>
+                            <h5>
+                                Bizimle İletişime Geçin
+                            </h5>
+                            <h6>
+                                Merkez
+                            </h6>
+                            <div class="contact-area">
+                                <ul>
+                                    <li>
+                                        <p><i class="fa-solid fa-location-dot"></i> Zeytinlik Mah. Fişekhane Cad. No: 50 Bakırköy İstanbul / TÜRKİYE </p>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-solid fa-mobile"></i>
+                                            <span>
+                                                +90 (212) 461 07 95
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-solid fa-fax"></i>
+                                            <span>
+                                                +90 (212) 461 07 79
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <span>
+                                                info@yilmazoglugroup.com
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <span>Copyright © 2023 Yılmazoğlu Group All Rights Reserved.</span>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <a href="https://www.wucize.com/" target="_blank">
+                            <img src="./img/wucize-footer.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
