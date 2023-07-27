@@ -279,7 +279,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
       },
       1366: {
           slidesPerView: 4,
-          spaceBetween: 80,
+          spaceBetween: 60,
       },
   },
 

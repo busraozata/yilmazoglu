@@ -1011,7 +1011,10 @@ header {
 
       .start-count {
         font-size: 2.3rem;
-        color: var(--color-yellow);
+        background: #CDB066;
+        background: linear-gradient(to right, #CDB066 0%, #F1E8B1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-weight: 500;
         margin-right: 0.5rem;
         @media screen and(max-width:$lg-breakpoint) {
@@ -1095,6 +1098,9 @@ header {
         right: 0;
         top: 0;
         bottom: 0;
+        @media screen and (max-width:$lg-breakpoint) {
+          background-color: rgba(0, 0, 0, 0.596);
+        }
       }
 
       img {
@@ -1124,7 +1130,8 @@ header {
 
           &::before {
             content: "";
-            background-color: var(--color-yellow);
+            background: rgb(197,164,87);
+            background: linear-gradient(180deg, rgba(197,164,87,1) 23%, rgba(197,163,86,1) 38%, rgba(192,157,78,1) 61%, rgba(200,168,94,1) 79%, rgba(220,201,136,1) 98%);
             height: 100%;
             width: 1rem;
             position: absolute;
@@ -1375,8 +1382,9 @@ header {
         &::before {
           content: "";
           height: 4rem;
-          width: 2px;
-          background-color: var(--color-yellow);
+          width: 3px;
+          background: rgb(197,164,87);
+          background: linear-gradient(180deg, rgba(197,164,87,1) 7%, rgba(197,163,86,1) 30%, rgba(220,201,136,1) 62%);
           top: 2rem;
           align-items: center;
           display: flex;
@@ -1388,45 +1396,7 @@ header {
           }
         }
 
-        .title {
-          margin-bottom: 5rem;
-          @media screen and(max-width:$lg-breakpoint) {
-            margin-bottom: 2rem;
-          }
-          h3 {
-            color: var(--color-yellow);
-
-            font-weight: 600;
-            font-size: 2.3rem;
-            margin: 3.8rem 0rem 1.6rem 0rem;
-            @media screen and(max-width:1440px) {
-              font-size: 2rem;
-            }
-            @media screen and(max-width:$lg-breakpoint) {
-              font-size: 1.5rem;
-              margin: 1.8rem 0rem 1.6rem 0rem;
-            }
-            @media screen and(max-width:$sm-breakpoint) {
-              font-size: 1.2rem;
-            }
-          }
-
-          p {
-            color: var(--text-color);
-            font-style: italic;
-            font-size: 1.05rem;
-            font-weight: 400;
-            padding: 0rem 1.5rem;
-
-            @media screen and(max-width:1440px) {
-              font-size: 0.9rem;
-            }
-            @media screen and(max-width:$lg-breakpoint) {
-              text-align: start !important;
-              padding: 0.5rem;
-            }
-          }
-        }
+        
         img {
           @media screen and (max-width: $lg-breakpoint) {
             margin-top: 2rem !important;
@@ -1444,11 +1414,17 @@ header {
             margin-bottom: 1rem;
           }
           h4 {
-            color: var(--color-yellow);
+                
             font-weight: 500;
             font-size: 2rem;
             margin-bottom: 1.5rem;
             font-weight: 900;
+            background: #CDB066;
+            background: linear-gradient(to right, #CDB066 0%, #F1E8B1 32%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+
             @media screen and (max-width: $xl-breakpoint) {
               font-size: 1.7rem;
             }
@@ -1478,15 +1454,22 @@ header {
           }
 
           .btn {
-            color: var(--color-yellow);
+            background: #CDB066;
+            background: linear-gradient(to right, #CDB066 90%, #F1E8B1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             padding-left: 0rem;
             font-size: 1rem;
             font-style: italic;
-            display: inline-block;
+            display: inline-block !important;
             transition: 0.3s all;
             border: none;
+            transition: 0.3s all;
             &:hover {
-              color: var(--color-blue);
+              background: var(--color-blue);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              
             }
 
             &:focus {
@@ -1503,16 +1486,21 @@ header {
      
     }
   }
-  
+  .gallery-thumbs .swiper-slide{
+    opacity: 1;
+  }
   .item {
-    font-weight: 500;
+    font-weight: 900;
     color: var(--color-black);
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 1rem;
     border: none;
     cursor: pointer;
 
     @media screen and(max-width:1440px) {
+      font-size: 1.1rem;
+    }
+    @media screen and (max-width:$sm-breakpoint) {
       font-size: 1rem;
     }
 
@@ -1525,7 +1513,7 @@ header {
 
     &::after {
       content: "";
-      height: 0.2rem;
+      height: 0.3rem;
       width: 100%;
       position: absolute;
       bottom: 0rem;
@@ -1536,11 +1524,13 @@ header {
 
     &::before {
       content: "";
-      height: 0.2rem;
+      height: 0.3rem;
       width: 0%;
       position: absolute;
       bottom: 0rem;
-      background-color: var(--color-yellow);
+      /* background-color: var(--color-yellow); */
+      background: rgb(197,164,87);
+      background: linear-gradient(90deg, rgba(197,164,87,1) 6%, rgba(197,163,86,1) 23%, rgba(220,201,136,1) 54%);
       left: 0;
       right: 0;
       z-index: 99;
@@ -1576,11 +1566,16 @@ header {
       font-weight: 900;
       font-size: 2.6rem;
       margin-bottom: 1rem;
+      background: #CDB066;
+      background: linear-gradient(to right, #CDB066 0%, #F1E8B1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
       @media screen and(max-width:1440px) {
         font-size: 2rem;
       }
       @media screen and(max-width:$sm-breakpoint) {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
     }
 
@@ -1597,7 +1592,7 @@ header {
 
     &::after {
       content: "";
-      background-color: var(--color-yellow);
+     background-color: var(--color-blue);
       height: 3rem;
       width: 3px;
       left: 0;
@@ -1748,11 +1743,11 @@ header {
     padding: 3rem 4rem;
   }
   @media screen and(max-width:$lg-breakpoint) {
-    padding: 0rem 1rem 2.5rem 1rem !important;
+    padding: 4rem 1rem 2.5rem 1rem !important;
   }
   .content {
     h6 {
-      color: var(--color-yellow);
+      color: var(--color-blue);
       font-weight: bold;
       font-style: italic;
       font-size: 1.4rem;
@@ -1769,7 +1764,8 @@ header {
 
       &::after {
         content: "";
-        background-color: var(--color-yellow);
+        background: rgb(197,164,87);
+      background: linear-gradient(90deg, rgba(197,164,87,1) 9%, rgba(197,163,86,1) 20%, rgba(192,157,78,1) 30%, rgba(200,168,94,1) 48%, rgba(220,201,136,1) 61%, rgba(227,210,149,1) 72%, rgba(239,228,172,1) 81%, rgba(231,215,156,1) 88%, rgba(234,220,179,1) 95%);
         width: 12rem;
         height: 0.2rem;
         position: absolute;
@@ -1823,7 +1819,7 @@ header {
       font-size: 1.1rem;
       max-width: 45rem;
       @media screen and(max-width:1440px) {
-        font-size: 0.9rem;
+        font-size: 1rem;
         max-width: 35rem;
       }
       @media screen and(max-width:$lg-breakpoint) {
@@ -1847,16 +1843,25 @@ header {
             margin-bottom: 1rem;
             font-style: italic;
             font-weight: 600;
-            color: var(--color-yellow);
+            background: #CDB066;
+            background: linear-gradient(to right, #CDB066 0%, #F1E8B1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-size: 1.4rem;
             transition: 0.3s all;
             &:hover {
-              color: var(--color-blue);
+              background: var(--color-blue);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              
             }
           }
 
           .btn {
-            color: var(--color-yellow);
+            background: #CDB066;
+            background: linear-gradient(to right, #CDB066 0%, #F1E8B1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             padding-left: 0rem;
             font-weight: 500;
             font-style: italic;
@@ -1864,7 +1869,10 @@ header {
             border: none;
             transition: 0.3s all;
             &:hover {
-              color: var(--color-blue);
+              background: var(--color-blue);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              
             }
 
             @media screen and(max-width:$lg-breakpoint) {
@@ -1892,7 +1900,9 @@ header {
   }
 
   .news {
-    background-color: var(--color-blue);
+    background: url(../img/blue-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 34rem;
     padding: 4rem 2rem 7rem 2rem;
     @media screen and(max-width:1440px) {
@@ -1908,7 +1918,10 @@ header {
     }
 
     h3 {
-      color: var(--color-white);
+      background: #CDB066;
+      background: linear-gradient(to right, #CDB066 0%, #F1E8B1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-size: 3rem;
       font-weight: 600;
       font-style: italic;
@@ -3744,13 +3757,9 @@ header {
       text-align: center;
       font-size: 18px;
       /* background: var(--color-yellow); */
-      background: rgb(22, 29, 133);
-      background: linear-gradient(
-        90deg,
-        rgba(22, 29, 133, 1) 21%,
-        rgba(27, 39, 161, 1) 47%,
-        rgba(22, 29, 133, 1) 79%
-      );
+      background: url(../img/blue-bg.png) no-repeat;
+      background-size: cover;
+      background-position: center;
       height: 16rem;
       /*   padding: 2rem; */
 
@@ -4065,7 +4074,7 @@ footer {
   }
 
   .copyright {
-    background-color: var(--color-yellow);
+    background-color: var(--color-blue);
     padding: 1rem 10rem 1rem 10rem;
     color: var(--color-white);
 
