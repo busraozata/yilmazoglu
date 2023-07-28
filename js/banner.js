@@ -35,9 +35,9 @@ $("#container").mousemove(function (e) {
 TweenLite.ticker.addEventListener("tick", function () {
   if (mouse.moved) {
     parallaxIt(".slide", 20);
-    parallaxIt(".move-img1", -3);
-    parallaxIt(".move-img2", 5);
-    parallaxIt(".move-img3", 8);
+    parallaxIt(".move-img1", -30);
+    parallaxIt(".move-img2", 10);
+    parallaxIt(".move-img3", -3);
     parallaxIt(".move-img4", 30);
     parallaxIt(".move-img5", -20);
     parallaxIt(".move-img6", 50);

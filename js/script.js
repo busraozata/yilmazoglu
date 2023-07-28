@@ -58,6 +58,8 @@ var mySwiperCurrent = new Swiper(".mySwiperCurrent", {
     delay: 2500,
     disableOnInteraction: false,
   },
+  slidesPerView: 2,
+  spaceBetween: 10,
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -93,13 +95,16 @@ var mySwiperNews = new Swiper(".mySwiperNews", {
     delay: 2500,
     disableOnInteraction: false,
   },
+  grid: {
+    rows: 2,
+  },
   breakpoints: {
     640: {
       slidesPerView: 1,
       spaceBetween: 5,
-      /* grid: {
+      grid: {
         rows: 2,
-      }, */
+      },
     },
     768: {
       slidesPerView: 1,
@@ -180,7 +185,12 @@ $(".mega-menu .sub-item .dropdown-item").on("mouseover", function () {
 
 
 var swiperGallery = new Swiper(".ImgGalleryMySwiper", {
-
+  slidesPerView: 2,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -207,6 +217,10 @@ var swiper = new Swiper(".mySwiperOurProjects", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     640: {
